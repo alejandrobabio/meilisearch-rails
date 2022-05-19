@@ -73,6 +73,26 @@ To update it, run the following command:
 bundle exec rubocop --auto-gen-config
 ```
 
+### Docker
+
+Alternatively you can use `Docker` to have your local development environment:
+
+Interactively:
+
+```bash
+docker-compose run --rm package bash
+
+root@1dc31cbe:/home/package# bundle install
+root@1dc31cbe:/home/package# bundle exec rspec
+root@1dc31cbe:/home/package# bundle exec rubocop -a
+```
+
+Or not:
+
+`docker-compose run --rm package bundle install`
+`docker-compose run --rm package bundle exec rubocop -a`
+`docker-compose run --rm package bundle exec rspec`
+
 ### Playground <!-- omit in toc -->
 
 First, you need to run a Meilisearch instance:
