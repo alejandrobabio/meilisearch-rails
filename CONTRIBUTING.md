@@ -89,9 +89,9 @@ root@1dc31cbe:/home/package# bundle exec rubocop -a
 
 Or not:
 
-`docker-compose run --rm package bundle install`
-`docker-compose run --rm package bundle exec rubocop -a`
-`docker-compose run --rm package bundle exec rspec`
+`docker-compose run --rm package bundle install`  
+`docker-compose run --rm package bundle exec rubocop -a`  
+`docker-compose run --rm package bundle exec rspec`  
 
 ### Playground <!-- omit in toc -->
 
